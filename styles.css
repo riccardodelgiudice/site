@@ -636,6 +636,11 @@ a:focus-visible {
   stroke: none;
 }
 
+.contact-links .linkedin-mark {
+  fill: currentColor;
+  stroke: none;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
