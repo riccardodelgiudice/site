@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Riccardo Del Giudice — Information Technology student at Ca' Foscari University of Venice."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Riccardo Del Giudice — Information Technology Student</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Riccardo Del Giudice, home">
+        Riccardo Del Giudice
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#motivation">Motivation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        class="header-github"
+        href="https://github.com/riccardodelgiudicelo"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="View Riccardo's GitHub profile"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.98 10.98 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+        </svg>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="
+              assets/hero-venice-manga-1280.avif 1280w,
+              assets/hero-venice-manga-1728.avif 1728w,
+              assets/hero-venice-manga-2172.avif 2172w
+            "
+            sizes="(max-width: 1120px) 1100px, 100vw"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              assets/hero-venice-manga-1280.webp 1280w,
+              assets/hero-venice-manga-1728.webp 1728w,
+              assets/hero-venice-manga-2172.webp 2172w
+            "
+            sizes="(max-width: 1120px) 1100px, 100vw"
+          />
+          <img
+            class="hero-art"
+            src="assets/hero-venice-manga.png"
+            alt="Manga illustration of a student overlooking the Venice skyline"
+            width="2172"
+            height="724"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="hero-copy">
+          <h1 id="hero-title">Riccardo<br />Del Giudice</h1>
+          <p class="hero-role">Information Technology Student</p>
+          <p class="hero-school">Ca’ Foscari University of Venice</p>
+          <span class="ink-rule" aria-hidden="true"></span>
+          <p class="hero-intro">
+            Exploring technology, building my foundations,<br />
+            and discovering where <em>curiosity can take me.</em>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#about">About me</a>
+            <a
+              class="button button-light"
+              href="https://github.com/riccardodelgiudicelo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View my GitHub
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 18 18 6M9 6h9v9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="chapter-grid">
+        <section class="chapter about" id="about" aria-labelledby="about-title">
+          <h2 class="chapter-heading" id="about-title"><span>About Me</span></h2>
+          <div class="about-copy" data-reveal>
+            <p>
+              I’m Riccardo Del Giudice, a first-year Information Technology student at
+              Ca’ Foscari University of Venice.
+            </p>
+            <p>
+              My journey in technology began at Istituto Tecnico Enrico Fermi, where I
+              spent five years studying Information Technology and building my first
+              foundations in programming and databases.
+            </p>
+            <p>
+              Today, I’m continuing that journey at university, where I’m expanding my
+              understanding of computer science through subjects such as C, C++ and
+              Computer Architecture.
+            </p>
+            <p>
+              I’m still exploring the many areas of technology and discovering which
+              ones inspire me the most. For me, this stage is about learning,
+              experimenting and building a strong foundation for the future.
+            </p>
+          </div>
+        </section>
+
+        <section class="chapter education" id="education" aria-labelledby="education-title">
+          <h2 class="chapter-heading" id="education-title"><span>Education</span></h2>
+          <ol class="timeline expandable-content" id="education-content" data-expandable="education" data-reveal>
+            <!-- Add future study entries as new <li> blocks; desktop expansion activates automatically after the second. -->
+            <li>
+              <span class="timeline-date">2025 – Present</span>
+              <strong>Ca’ Foscari University of Venice</strong>
+              <em>Bachelor’s degree in Information Technology</em>
+              <span>First year</span>
+            </li>
+            <li>
+              <span class="timeline-date">2020 – 2025</span>
+              <strong>Istituto Tecnico Enrico Fermi</strong>
+              <em>Five years of Information Technology studies</em>
+            </li>
+          </ol>
+          <button
+            class="panel-expand"
+            type="button"
+            aria-expanded="false"
+            aria-controls="education-content"
+            data-expand-target="education-content"
+            data-open-label="View all studies"
+            data-close-label="Compact view"
+            hidden
+          >
+            <span>View all studies</span>
+            <i aria-hidden="true"></i>
+          </button>
+        </section>
+
+        <section class="chapter skills" id="skills" aria-labelledby="skills-title">
+          <h2 class="chapter-heading" id="skills-title"><span>Skills</span></h2>
+          <div class="skill-groups expandable-content" id="skills-content" data-expandable="skills" data-reveal>
+            <article class="skill-group">
+              <h3>University</h3>
+              <ul>
+                <!-- Add future skills as new <li> items; desktop expansion activates automatically after the third. -->
+                <li>C</li>
+                <li>C++</li>
+                <li>Computer Architecture</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>High School</h3>
+              <ul>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Database fundamentals</li>
+              </ul>
+            </article>
+          </div>
+          <button
+            class="panel-expand"
+            type="button"
+            aria-expanded="false"
+            aria-controls="skills-content"
+            data-expand-target="skills-content"
+            data-open-label="View all skills"
+            data-close-label="Compact view"
+            hidden
+          >
+            <span>View all skills</span>
+            <i aria-hidden="true"></i>
+          </button>
+        </section>
+      </div>
+
+      <div class="lower-grid">
+        <section class="motivation" id="motivation" aria-labelledby="motivation-title">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                assets/window-books-manga-480.avif 480w,
+                assets/window-books-manga-1024.avif 1024w,
+                assets/window-books-manga-1536.avif 1536w
+              "
+              sizes="(max-width: 1120px) 100vw, 225px"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/window-books-manga-480.webp 480w,
+                assets/window-books-manga-1024.webp 1024w,
+                assets/window-books-manga-1536.webp 1536w
+              "
+              sizes="(max-width: 1120px) 100vw, 225px"
+            />
+            <img
+              class="motivation-art"
+              src="assets/window-books-manga.png"
+              alt="Manga ink drawing of a Venetian window and a stack of books"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="motivation-copy" data-reveal>
+            <h2 class="chapter-heading" id="motivation-title"><span>Motivation</span></h2>
+            <p>
+              Technology is a field with almost endless possibilities, and I’m still
+              discovering which ones are the right fit for me.
+            </p>
+            <p>
+              What motivates me is the opportunity to keep learning, understand how
+              things work and challenge myself with problems I haven’t faced before.
+            </p>
+            <p>
+              I don’t have a single destination in mind yet — and I think that’s part of
+              the journey. I’m currently exploring different areas of technology while
+              building a strong foundation in computer science.
+            </p>
+            <p class="closing-line">
+              I’m not trying to have everything figured out. I’m trying to keep moving forward.
+            </p>
+          </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                assets/venice-lamp-manga-480.avif 480w,
+                assets/venice-lamp-manga-1024.avif 1024w,
+                assets/venice-lamp-manga-1536.avif 1536w
+              "
+              sizes="(max-width: 1120px) 100vw, 52vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/venice-lamp-manga-480.webp 480w,
+                assets/venice-lamp-manga-1024.webp 1024w,
+                assets/venice-lamp-manga-1536.webp 1536w
+              "
+              sizes="(max-width: 1120px) 100vw, 52vw"
+            />
+            <img
+              class="contact-art"
+              src="assets/venice-lamp-manga.png"
+              alt="Manga ink drawing of a lamp beside a Venetian canal"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="contact-copy" data-reveal>
+            <h2 class="chapter-heading" id="contact-title"><span>Contact</span></h2>
+            <p class="contact-lead">Let’s connect.</p>
+            <p class="contact-intro">
+              Whether you want to talk about technology,<br /> share an idea, or simply
+              connect, feel free<br /> to reach out.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:hello.riccardodelgiudice@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 5.5h18v13H3z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+                <span>hello.riccardodelgiudice@gmail.com</span>
+              </a>
+              <a
+                href="https://github.com/riccardodelgiudicelo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.98 10.98 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+                </svg>
+                <span>github.com/riccardodelgiudicelo</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2025 Riccardo Del Giudice</span>
+      <span class="footer-motto">Learning&nbsp;&nbsp;·&nbsp;&nbsp;Building&nbsp;&nbsp;·&nbsp;&nbsp;Growing</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
