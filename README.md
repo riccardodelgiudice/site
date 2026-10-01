@@ -1,30 +1,15 @@
-<h1 align="center">Personal Portfolio</h1>
+# Riccardo Del Giudice — Monochrome Portfolio
 
-<p align="center">
-  An editorial-style personal website documenting my journey<br>
-  through technology, university and continuous learning.
-</p>
+Static responsive portfolio inspired by a monochrome editorial and brutalist design system.
 
-<p align="center">
-  <a href="https://riccardodelgiudice.github.io/site/"><strong>VIEW WEBSITE →</strong></a>
-</p>
+## Open
 
-<br>
+Open `index.html` directly in a modern browser. No build step or web server is required.
 
----
+## Files
 
-### ABOUT
-
-Personal portfolio of **Riccardo Del Giudice**, Information Technology student at Ca' Foscari University of Venice.
-
-Designed around a minimal editorial language inspired by **technology and Venice**.
-
-### BUILT WITH
-
-`HTML` &nbsp;&nbsp; `CSS` &nbsp;&nbsp; `JavaScript`
-
----
-
-<p align="center">
-  <sub>LEARNING &nbsp;·&nbsp; BUILDING &nbsp;·&nbsp; GROWING</sub>
-</p>
+- `index.html` — semantic page structure and content
+- `styles.css` — complete responsive layout and visual design
+- `script.js` — navigation, scroll controls and subtle reveal motion
+- `assets/brutalist-hero.png` — generated monochrome architectural hero image
+- `assets/Manrope-Variable.ttf` — local display typeface
