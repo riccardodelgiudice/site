@@ -1,18 +1,30 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const links = [...document.querySelectorAll('.nav a')];
+const menuLabel = toggle.querySelector('.sr-only');
+
+function setMenu(open) {
+  toggle.setAttribute('aria-expanded', String(open));
+  nav.classList.toggle('open', open);
+  menuLabel.textContent = open ? 'Close navigation' : 'Open navigation';
+}
 
 toggle.addEventListener('click', () => {
   const open = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!open));
-  nav.classList.toggle('open', !open);
+  setMenu(!open);
 });
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('open');
+    setMenu(false);
   });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav.classList.contains('open')) {
+    setMenu(false);
+    toggle.focus();
+  }
 });
 
 const sections = [...document.querySelectorAll('main [id]')];
@@ -52,16 +64,3 @@ scrollControls.forEach((button) => {
   new ResizeObserver(() => updateScrollControl(button)).observe(target);
   updateScrollControl(button);
 });
-
-const revealTargets = [...document.querySelectorAll('.panel, .projects')];
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: .08 });
-
-document.body.classList.add('motion-ready');
-revealTargets.forEach((target) => revealObserver.observe(target));
