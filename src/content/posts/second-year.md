@@ -6,11 +6,15 @@ excerpt: Presentation, new projects, uncertainty about AI, and stepping outside 
 tags: university, personal-growth, computer-science
 readingTime: 2 min read
 ---
+
+### Presentation
+
 Hi, I'm Riccardo, an Information Technology student at Ca’ Foscari University of Venice.
 
 This is the beginning of my personal blog, a place where I want to document my journey, share what I learn, and explore ideas that interest me.
 
 ### Reflections
+
 I've just started my second year at university.
 I'm very excited because I have so many interesting projects I'd like to work on to improve my knowledge and develop my skills.
 
