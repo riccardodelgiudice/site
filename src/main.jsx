@@ -16,6 +16,11 @@ const posts = Object.entries(postModules).map(([file, raw]) => parsePost(raw, fi
 const visibleTopics = ['university', 'learning']
 const assetUrl = (path) => `${import.meta.env.BASE_URL}${path}`
 const routerBase = import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL.replace(/\/$/, '')
+const markdownImagePattern = /^!\[([^\]]*)\]\((\S+)(?:\s+"([^"]*)")?\)$/
+
+function contentImageUrl(source) {
+  return source.startsWith('http://') || source.startsWith('https://') ? source : assetUrl(source.replace(/^\/+/, ''))
+}
 
 const social = [
   ['Email', 'hello.riccardodelgiudice@gmail.com', 'mailto:hello.riccardodelgiudice@gmail.com'],
@@ -92,7 +97,14 @@ function BlogIndex() {
 }
 
 function MarkdownBody({ body }) {
-  return <div className="article-body">{body.split(/\n\n+/).map((block, index) => { if (block.startsWith('### ')) return <h3 key={index}>{block.slice(4)}</h3>; if (block.startsWith('## ')) return <h2 key={index}>{block.slice(3)}</h2>; if (block.startsWith('- ')) return <ul key={index}>{block.split('\n').map((line) => <li key={line}>{line.replace(/^- /, '')}</li>)}</ul>; return <p key={index}>{block}</p> })}</div>
+  return <div className="article-body">{body.split(/\n\n+/).map((block, index) => {
+    const image = block.match(markdownImagePattern)
+    if (image) return <figure className="article-image" key={index}><img src={contentImageUrl(image[2])} alt={image[1]} loading="lazy" />{image[3] ? <figcaption>{image[3]}</figcaption> : null}</figure>
+    if (block.startsWith('### ')) return <h3 key={index}>{block.slice(4)}</h3>
+    if (block.startsWith('## ')) return <h2 key={index}>{block.slice(3)}</h2>
+    if (block.startsWith('- ')) return <ul key={index}>{block.split('\n').map((line) => <li key={line}>{line.replace(/^- /, '')}</li>)}</ul>
+    return <p key={index}>{block}</p>
+  })}</div>
 }
 
 function Article() {
