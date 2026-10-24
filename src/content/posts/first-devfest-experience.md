@@ -7,7 +7,7 @@ tags: learning, university, community, personal-growth
 readingTime: 2 min read
 ---
 
-Today, I attended DevFest for the first time—an event organized by the Google Developer Group.
+Today, I attended DevFest for the first time. The event was organized by the Google Developer Group.
 
 ![The DevFest Venezia attendee badge, T-shirt and tote bag](assets/blog/devfest-2026-gadgets.jpeg "The DevFest Venezia attendee kit.")
 
@@ -15,7 +15,7 @@ It was a valuable opportunity to discover interesting companies and professional
 
 ### Different perspectives, shared interests
 
-Despite having common interests, everyone brought a different perspective. Our conversations gave me new ideas and reflections that I believe will be useful throughout my journey—not only as a student, but also for my personal growth.
+Despite having common interests, everyone brought a different perspective. Our conversations gave me new ideas and reflections that I believe will be useful throughout my journey, not only as a student but also for my personal growth.
 
 ### A welcoming community
 
