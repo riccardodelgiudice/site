@@ -109,7 +109,7 @@ button, input { font: inherit; }
 .article-body h2 { margin: 44px 0 12px; font: 700 30px/1.15 var(--serif); }
 .article-body h3 { margin: 34px 0 10px; font: 700 23px/1.2 var(--serif); }
 .article-body ul { padding-left: 22px; }
-.article-image { margin: 32px 0; }
+.article-image { width: 88%; margin: 32px auto; }
 .article-image img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .article-image figcaption { margin-top: 8px; color: var(--muted); font: 10px/1.5 var(--mono); }
 .article-page article > footer { margin-top: 38px; padding-top: 15px; border-top: 1px solid var(--line); }
@@ -183,6 +183,7 @@ button, input { font: inherit; }
   .article-page { padding-top: 28px; }
   .article-page article { margin-top: 30px; padding: 22px 18px; }
   .article-body { font-size: 17px; }
+  .article-image { width: 100%; }
   .project-detail-page { padding-top: 28px; }
   .project-detail-header { margin-top: 22px; padding: 22px 18px; }
   .project-detail-header h1 { font-size: 43px; }
